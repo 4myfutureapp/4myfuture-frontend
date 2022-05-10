@@ -6,7 +6,7 @@ import { useNear } from '../hooks/useNear';
 import useUser from '../hooks/useUser';
 import { initContract } from './near/near';
 interface LayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode | Array<React.ReactNode>;
 }
 
 function Layout({ children }: LayoutProps) {
@@ -40,16 +40,14 @@ function Layout({ children }: LayoutProps) {
   // }, [nearContext]);
 
   return (
-    <div className="w-full">
-      <div className="hidden lg:block">
+    <div className="w-full bg-white relative flex flex-col">
+      <img className="bg-fixed w-full fixed" src="web-bg.png" alt="bg" />
+      <div className=" w-full sticky top-0 z-50">
         <Navbar />
       </div>
-      {children}
+      <div className="w-full z-10 relative flex flex-col">{children}</div>
       {/* Mobile navs goes on the footer of the page, so no footer will be shown on this screen size. */}
-      <div className="lg:hidden">
-        <MobileNav />
-      </div>
-      <div className="hidden lg:block">
+      <div className="w-full z-10 relative">
         <Footer />
       </div>
     </div>
