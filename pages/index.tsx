@@ -1,13 +1,15 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from 'react';
+import Layout from '../components/Layout';
+import WelcomeSection from '../components/home/WelcomeSection';
+import Information from '../components/home/Information';
+import RoadMap from '../components/home/RoadMap';
+
 export default function index() {
   return (
     <Layout>
-      <div className='flex justify-center align-middle items-center w-screen h-screen'>
-        <div className='text-2xl font-thin'>
-          WEB.3.0 NEAR Protocol Template 🚀
-        </div>
-      </div>
+      <WelcomeSection />
+      <Information />
+      <RoadMap />
     </Layout>
-  )
+  );
 }

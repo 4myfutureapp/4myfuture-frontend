@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Navbar from './common/Navbar';
 import Footer from './common/Footer';
@@ -45,9 +46,9 @@ function Layout({ children }: LayoutProps) {
       <div className=" w-full sticky top-0 z-50">
         <Navbar />
       </div>
-      <div className="w-full z-10 relative flex flex-col">{children}</div>
+      <div className="w-full relative z-10 flex flex-col overflow-x-hidden">{children}</div>
       {/* Mobile navs goes on the footer of the page, so no footer will be shown on this screen size. */}
-      <div className="w-full z-10 relative">
+      <div className="w-full relative mt-10">
         <Footer />
       </div>
     </div>
