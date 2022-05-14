@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function WelcomeSection() {
   return (
-    <div className="w-full md:h-[650px] h-[300px] flex flex-row item-center">
+    <div className="w-full md:h-[650px] h-[200px] flex flex-row item-center">
       <div className="flex flex-col justify-center z-10">
         <div className="flex flex-row items-center md:ml-20 ml-5">
           <p className="text-blue-700 font-display-400 font-light md:text-6xl text-2xl">Help</p>
@@ -16,7 +16,7 @@ export default function WelcomeSection() {
           Start Now
         </button>
       </div>
-      <div className="flex w-full md:h-[650px] h-[300px] items-center justify-end absolute md:ml-0 ml-10">
+      <div className="flex w-full md:h-[650px] h-[180px] items-center justify-end absolute md:ml-0 ml-10">
         <img alt="rocket" src="rocket.svg" className="flex md:w-3/6 w-[270px]" />
       </div>
       
