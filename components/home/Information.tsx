@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Bounce from 'react-reveal';
 
 export default function Information() {
   return(
@@ -9,6 +10,7 @@ export default function Information() {
         <p className="font-display-300 text-blue-700 font-extralight md:text-3xl text-lg">Help students fund their academic goals</p>
       </div>
       <div className="flex flex-row absolute w-full h-[500px] items-center justify-center md:mt-32 mt-16 md:gap-x-20 gap-x-10 flex-wrap">
+        <Bounce bottom cascade> 
           <div className="md:w-72 w-40 md:h-96 h-52 drop-shadow-3xl bg-white rounded-lg flex flex-col items-center">
             <div className="md:h-1/2 h-20 w-full flex justify-center items-end">
               <img alt="easy" className="md:w-24 w-11" src="easy.svg" />
@@ -36,6 +38,7 @@ export default function Information() {
               <p className="text-gray-500 md:text-lg text-sm font-extralight w-3/4 text-center md:mt-3 mt-0">Option to view and Audit transactions</p>
             </div>
         </div>
+        </Bounce> 
       </div>
     </div>
   )
