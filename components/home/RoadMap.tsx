@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal';
 
 export default function RoadMap() {
   const [stageZero, setStageZero] = React.useState(false);
@@ -8,10 +9,12 @@ export default function RoadMap() {
   const [stageFour, setStageFour] = React.useState(false);
   return (
     <div className="w-full h-screen bg-blue-700 flex relative">
+      <Fade left cascade>
       <div className="flex flex-col absolute w-full h-full">
         <p className="text-white md:text-2xl text-md font-extralight ml-24 mt-40">Our Goals</p>
         <p className="text-white md:text-4xl text-xl font-regular ml-24">RoadMap</p>
       </div>
+      </Fade>
       <div className="w-full h-full flex relative md:flex-col flex-row items-center justify-center">
         <div className="flex md:flex-row flex-col w-full justify-evenly">
           <div className="flex md:flex-col flex-row items-center justify-end">

@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamCard from '../cards/TeamCard';
+import Fade from 'react-reveal';
 
 export default function TeamSection() {
   return (
