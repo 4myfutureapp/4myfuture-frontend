@@ -8,7 +8,7 @@ export default function FrequentQuestionSection() {
       <p className="text-blue-700 font-extralight md:text-4xl text-2xl">Frequently Asked Questions</p>
       <div className="flex flex-row md:gap-x-20 gap-x-10 md:mt-20 mt-10">
         <Fade left>
-          <ul className="text-gray-500 underline list-disc md:text-xl text-sm cursor-pointer font-light">
+          <ul className="text-gray-500 underline list-disc md:text-xl text-xs cursor-pointer font-light">
             <Link href="/"><li>this is question number 1?</li></Link>
             <Link href="/"><li>this is question number 2?</li></Link>
             <Link href="/"><li>this is question number 3?</li></Link>
@@ -16,7 +16,7 @@ export default function FrequentQuestionSection() {
           </ul>
         </Fade>
         <Fade right>
-          <ul className="text-gray-500 underline list-disc md:text-xl text-sm cursor-pointer font-light">
+          <ul className="text-gray-500 underline list-disc md:text-xl text-xs cursor-pointer font-light">
             <Link href="/"><li>this is question number 5?</li></Link>
             <Link href="/"><li>this is question number 6?</li></Link>
             <Link href="/"><li>this is question number 7?</li></Link>
