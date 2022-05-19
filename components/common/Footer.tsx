@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <div className="w-full h-60 bg-blue-700 flex flex-row justify-evenly items-center">
+    <div className="w-full h-60 bg-blue-700 flex flex-row justify-evenly items-center relative">
       <div className="w-80 h-full">
         <img className="hidden lg:block w-48 ml-10 pt-10 " src="white-logo.svg" alt="logo" />
       </div>
@@ -44,6 +44,9 @@ export default function Footer() {
           <button className="w-10 h-10"><InstagramIcon className="text-white hover:text-blue-100" /></button>
           <button className="w-10 h-10"><TwitterIcon className="text-white hover:text-blue-100"/></button>
         </div>
+      </div>
+      <div className="w-full h-full absolute flex items-end justify-end">
+        <p className="text-white mb-5 text-xs mr-20">4MyFutureDApp - Near Protocol 2022</p>
       </div>
     </div>
   )
