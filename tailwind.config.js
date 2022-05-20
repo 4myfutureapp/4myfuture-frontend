@@ -8,11 +8,17 @@ module.exports = {
           100: '#355F9E',
           400: '#3E69A8',
           500: '#0038A6',
-          700: '#0D336B'
+          600: '#0029B9',
+          700: '#0D336B',
+          800: '#01114B'
         },
         yellow:{
           300: '#ECCB46'
         },
+        gray: {
+          100: '#EFEFEF',
+          200: '#818181'
+        }
       },
       fontFamily:{
         display: [ 'Montserrat']
