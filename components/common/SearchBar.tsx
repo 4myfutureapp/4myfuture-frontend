@@ -5,8 +5,7 @@ import FilterIcon from '../icons/FilterIcon';
 function SearchBar() {
   return (
     <div className="h-60 w-full flex items-center justify-center flex-col">
-      
-        <div className="w-3/4 h-16 flex justify-center rounded-xl drop-shadow-md bg-gray-100">
+        <div className="w-4/5 h-16 flex justify-center rounded-xl drop-shadow-md bg-gray-100">
           <input 
             type="text"
             className="w-11/12 h-16 bg-gray-100 outline-none text-gray-500 font-light"
