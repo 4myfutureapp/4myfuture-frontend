@@ -1,4 +1,4 @@
-import { createContext, FC, useState } from "react";
+import { createContext, useState } from "react";
 
 export const UserContext = createContext<
   [
@@ -7,7 +7,11 @@ export const UserContext = createContext<
   ]
 >(["", null]);
 
-const UserContextProvider: FC = ({ children }) => {
+interface FunctionalComponent {
+  children: React.ReactNode;
+}
+
+const UserContextProvider = ({ children }: FunctionalComponent) => {
   const [user, setUser] = useState<string | null>("");
 
   return (
