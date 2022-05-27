@@ -21,10 +21,10 @@ export default function RoadMap() {
             <div className="flex flex-col md:mb-10 mb-0 md:w-60 w-24 h-32 md:justify-end justify-center md:items-center">
               <p className={`text-white md:text-xl text-md font-regular`}>Stage 1</p>
               { stageOne ? (<ul className={`text-white list-disc font-extralight md:text-base text-sm md:mt-0 mt-5`}>
-                <li>Frontend & UI/UX</li>
-                <li>First NFTs</li>
-                <li>V2 Contract for Frontend</li>
-                <li>Whitelist Android Token</li>
+                <li>Frontend & UI/UX new version</li>
+                <li>First Community NFTs</li>
+                <li>New Contract Version</li>
+                <li>Whitelist for Airdrop</li>
               </ul>): (null)}
             </div>
             <button 
@@ -38,9 +38,9 @@ export default function RoadMap() {
             <div className="flex flex-col md:mb-10 mb-0 md:w-60 w-24 h-32 md:justify-end justify-center md:items-center items-start">
               <p className={`text-white md:text-xl text-md font-regular`}>Stage 3</p>
               { stageThree ? (<ul className={`${stageThree ? 'text-white' : 'text-blue-700'} list-disc font-extralight md:mt-0 mt-5`}>
-                <li>Futures Token Launch & Androp</li>
-                <li>NFTs minting page in 4MyFuture Elite Club</li>
-                <li>Creation of Honor page</li>
+                <li>Launch Token</li>
+                <li>4MyFuture Elite Club and Minting page</li>
+                <li>Honor page within The Club</li>
               </ul>): (null)}
             </div>
             <button 
@@ -63,9 +63,9 @@ export default function RoadMap() {
             <div className="flex flex-col md:mt-10 mt-0 md:w-60 w-24 h-32 md:justify-start justify-center md:items-center items-start ml-8 md:ml-0">
               <p className={`text-white md:text-xl text-md font-regular`}>Stage 0</p>
               { stageZero ? (<ul className={`${stageZero ? 'text-white' : 'text-blue-700'} list-disc font-extralight md:mt-0 mt-5`}>
-                <li>Functional MVP</li>
-                <li>RRSS and Comunication Channels</li>
-                <li>RRSS Marketing</li>
+                <li>Launch MVP</li>
+                <li>Creation of RRSS and Comunication Channels</li>
+                <li>Marketing</li>
               </ul>): (null)}
             </div>
           </div>
@@ -80,8 +80,8 @@ export default function RoadMap() {
               <p className={`${stageTwo ? 'md:mt-0 mt-14': null } text-white md:text-xl text-md font-regular`}>Stage 2</p>
               { stageTwo ? (<ul className="text-white list-disc font-extralight">
                 <li>4MyFuture Elite Club Landing</li>
-                <li>Futures Token creation & tokenomics</li>
-                <li>NFTs by range</li>
+                <li>Tokenomics Paper</li>
+                <li>NFTs presentation</li>
               </ul>): (null)}
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function RoadMap() {
             <div className="flex flex-col md:mt-10 mt-0 md:w-60 w-24 h-32 md:justify-start justify-center md:items-center items-start ml-8 md:ml-0">
               <p className={`text-white md:text-xl text-md font-regular`}>Stage 4</p>
               { stageFour ? (<ul className="text-white list-disc font-extralight">
-                <li>4MyFuture Seed</li>
+                <li>4MyFuture Expantion</li>
               </ul>): (null)}
             </div>
           </div>

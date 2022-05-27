@@ -21,16 +21,16 @@ export default function ContributorSection() {
             </div>
             <div className="flex flex-col md:ml-10 ml-5">
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md">Funded:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">10.0 NEARs</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"></p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Recipient:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">lexdev.testnet</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500">Comming Soon </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Date:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">03/15/2022</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"> </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
             </div>
           </div>
@@ -40,16 +40,16 @@ export default function ContributorSection() {
             </div>
             <div className="flex flex-col md:ml-10 ml-5">
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md">Funded:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">10.0 NEARs</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"></p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Recipient:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">lexdev.testnet</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500"> Comming Soon  </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Date:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">03/15/2022</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"> </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
             </div>
           </div>
@@ -59,16 +59,16 @@ export default function ContributorSection() {
             </div>
             <div className="flex flex-col md:ml-10 ml-5">
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md">Funded:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">10.0 NEARs</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"></p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Recipient:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">lexdev.testnet</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500">Comming Soon </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md"> Date:</p>
-                <p className="text-gray-600 font-regular md:text-xl text-md ml-2">03/15/2022</p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md"> </p>
+                <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
             </div>
           </div>
