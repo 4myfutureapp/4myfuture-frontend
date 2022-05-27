@@ -1,9 +1,11 @@
 import React from 'react';
 import { SearchIcon } from '../icons';
 import FilterIcon from '../icons/FilterIcon';
+import { Fade } from 'react-reveal';
 
 function SearchBar() {
   return (
+    <Fade top>
     <div className="h-60 w-full flex items-center justify-center flex-col">
         <div className="w-4/5 h-16 flex justify-center rounded-xl drop-shadow-md bg-gray-100">
           <input 
@@ -21,6 +23,7 @@ function SearchBar() {
           </button>
         </div>
     </div>
+    </Fade>
   );
 }
 

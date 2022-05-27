@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import {useRouter} from 'next/router';
 
 interface ProposalCardProps {
   title: string;
@@ -8,8 +9,9 @@ interface ProposalCardProps {
 }
 
 function ProposalCard({title, description, nears}: ProposalCardProps) {
+  const router = useRouter()
   return (
-    <button className="w-80 h-[450px] bg-white drop-shadow-3xl rounded-lg flex flex-col items-center justify-start cursor-pointer">
+    <button className="w-80 h-[450px] bg-white drop-shadow-3xl rounded-lg flex flex-col items-center justify-start cursor-pointer" onClick={()=> router.push("/proposal")}>
       <div className="w-11/12 h-52 flex items-center justify-center rounded-lg overflow-clip mt-3">
         <img alt="proposalIMG" src="proposalPlaceholder.jpeg" className="w-full h-full object-cover" />
       </div>
