@@ -21,11 +21,13 @@ export default function TeamCard({name, job, description, img, linkedin, git, tw
     <div onMouseOver={()=>{setHover(false)}} onMouseOut={()=>{setHover(true)}} className="md:w-80 w-40 md:h-96 h-52 drop-shadow-3xl flex flex-col items-center bg-white rounded-xl overflow-y-clip">
       {hover ? (
       <div className="md:w-80 w-40 md:h-96 h-52 flex flex-col items-center">
-        <div className="w-full md:h-80 h-40 flex items-center justify-center">
+        <div className="w-full md:h-80 h-40 flex items-center justify-center overflow-clip">
           <img alt="teammate" src={img} className="object-cover w-full h-full" />
         </div>
-        <p className="text-blue-700 md:text-3xl text-lg font-light">{name}</p>
-        <p className="text-blue-700 md:text-2xl text-md font-extralight">{job}</p>
+        <div className="flex flex-col justify-center items-center md:p-1 p-[1px]">
+          <p className="text-blue-700 md:text-3xl text-lg font-light">{name}</p>
+          <p className="text-blue-700 md:text-2xl text-md font-extralight">{job}</p>
+        </div>
       </div>
       ) : (
       <Flip left>
