@@ -45,12 +45,12 @@ function Layout({ children }: LayoutProps) {
     <div className="w-full bg-white relative flex flex-col">
       <img className="bg-fixed w-full fixed" src="web-bg.png" alt="bg" />
       <div className=" w-full sticky top-0 z-50">
-        {/* <Navbar /> */}
-        <AuthNav user="ANA" nears={3} />
+        <Navbar />
+        {/* <AuthNav user="ANA" nears={3} /> */}
       </div>
       <div className="w-full relative z-10 flex flex-col overflow-x-hidden">{children}</div>
       {/* Mobile navs goes on the footer of the page, so no footer will be shown on this screen size. */}
-      <div className="w-full relative">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

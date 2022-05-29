@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 export default function WelcomeSection() {
   const router = useRouter();
   return (
-    <div className="w-full md:h-[650px] h-[250px] flex flex-row item-center">
+    <div className="w-full md:h-[620px] h-[250px] flex flex-row item-center relative">
       <Fade left>
         <div className="flex flex-col justify-center z-10 md:-mt-0 -mt-10">
           <div className="flex flex-row items-center md:ml-20 ml-10">
@@ -29,6 +29,11 @@ export default function WelcomeSection() {
           <img alt="rocket" src="rocket.svg" className="flex md:w-3/6 w-[270px]" />
         </div>
       </Fade>
+      <div className="absolute w-full h-full flex justify-end items-end flex-row gap-x-2 md:p-7 p-4">
+        <button className="md:text-xl text-sm font-bold text-blue-700 hover:text-blue-300">EN</button>
+        <p className="md:text-xl text-sm text-blue-700">/</p>
+        <button className="md:text-xl text-sm font-light text-blue-700 hover:text-blue-300">ES</button>
+      </div>
       
     </div>
   )
