@@ -1,5 +1,5 @@
-import React from 'react';
-import Fade from 'react-reveal';
+import React from "react";
+import Fade from "react-reveal";
 
 export default function RoadMap() {
   const [stageZero, setStageZero] = React.useState(false);
@@ -10,43 +10,73 @@ export default function RoadMap() {
   return (
     <div className="w-full h-screen bg-blue-700 flex relative">
       <Fade left cascade>
-      <div className="flex flex-col absolute w-full h-full">
-        <p className="text-white md:text-2xl text-md font-extralight md:ml-24 ml-16 md:mt-40 mt-20">Our Goals</p>
-        <p className="text-white md:text-4xl text-xl font-regular md:ml-24 ml-16">RoadMap</p>
-      </div>
+        <div className="flex flex-col absolute w-full h-full">
+          <p className="text-white md:text-2xl text-md font-extralight md:ml-24 ml-16 md:mt-40 mt-20">
+            Our Goals
+          </p>
+          <p className="text-white md:text-4xl text-xl font-regular md:ml-24 ml-16">
+            RoadMap
+          </p>
+        </div>
       </Fade>
       <div className="w-full h-full flex md:flex-col flex-row relative items-center justify-center">
         <div className="flex md:flex-row flex-col w-full md:justify-evenly gap-y-40">
           <div className="flex md:flex-col flex-row items-center justify-end">
             <div className="flex flex-col md:mb-10 mb-0 md:w-60 w-24 h-32 md:justify-end justify-center md:items-center">
-              <p className={`text-white md:text-xl text-md font-regular`}>Stage 1</p>
-              { stageOne ? (<Fade bottom><ul className={`text-white list-disc font-extralight md:text-base text-sm md:mt-0 mt-5 md:ml-7`}>
-                <li>Frontend & UI/UX</li>
-                <li>First NFTs</li>
-                <li>V2 Contract for Frontend</li>
-                <li>Whitelist Android Token</li>
-              </ul></Fade>): (null)}
+              <p className={`text-white md:text-xl text-md font-regular`}>
+                Stage 1
+              </p>
+              {stageOne ? (
+                <Fade bottom>
+                  <ul
+                    className={`text-white list-disc font-extralight md:text-base text-sm md:mt-0 mt-5 md:ml-7`}
+                  >
+                    <li>Frontend & UI/UX new version</li>
+                    <li>First Community NFTs</li>
+                    <li>New Contract Version</li>
+                    <li>Whitelist for Airdrop</li>
+                  </ul>
+                </Fade>
+              ) : null}
             </div>
-            <button 
-              type="button" 
-              className={`${stageOne ? 'bg-yellow-300': null } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
-              onClick={()=> {setStageOne(!stageOne)}} 
+            <button
+              type="button"
+              className={`${
+                stageOne ? "bg-yellow-300" : null
+              } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
+              onClick={() => {
+                setStageOne(!stageOne);
+              }}
             />
             <div className="md:h-16 h-1 md:w-1 w-8 bg-white" />
           </div>
           <div className="flex md:flex-col flex-row items-center justify-end">
             <div className="flex flex-col md:mb-10 mb-0 md:w-60 w-24 h-32 md:justify-end justify-center md:items-center items-start">
-              <p className={`text-white md:text-xl text-md font-regular`}>Stage 3</p>
-              { stageThree ? (<Fade bottom><ul className={`${stageThree ? 'text-white' : 'text-blue-700'} list-disc font-extralight md:mt-0 mt-5`}>
-                <li>Futures Token Launch & Androp</li>
-                <li>NFTs minting page in 4MyFuture Elite Club</li>
-                <li>Creation of Honor page</li>
-              </ul></Fade>): (null)}
+              <p className={`text-white md:text-xl text-md font-regular`}>
+                Stage 3
+              </p>
+              {stageThree ? (
+                <Fade bottom>
+                  <ul
+                    className={`${
+                      stageThree ? "text-white" : "text-blue-700"
+                    } list-disc font-extralight md:mt-0 mt-5`}
+                  >
+                    <li>Launch Token</li>
+                    <li>4MyFuture Elite Club and Minting page</li>
+                    <li>Honor page within The Club</li>
+                  </ul>
+                </Fade>
+              ) : null}
             </div>
-            <button 
-              type="button" 
-              className={`${stageThree ? 'bg-yellow-300': null } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
-              onClick={()=> {setStageThree(!stageThree)}} 
+            <button
+              type="button"
+              className={`${
+                stageThree ? "bg-yellow-300" : null
+              } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
+              onClick={() => {
+                setStageThree(!stageThree);
+              }}
             />
             <div className="md:h-16 h-1 md:w-1 w-8 bg-white" />
           </div>
@@ -55,52 +85,90 @@ export default function RoadMap() {
         <div className="flex md:flex-row flex-col w-full md:justify-evenly gap-y-32">
           <div className="flex md:flex-col flex-row items-center">
             <div className="md:h-16 h-1 md:w-1 w-8 bg-white" />
-            <button 
-              type="button" 
-              className={`${stageZero ? 'bg-yellow-300': null } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
-              onClick={()=> {setStageZero(!stageZero)}} 
+            <button
+              type="button"
+              className={`${
+                stageZero ? "bg-yellow-300" : null
+              } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
+              onClick={() => {
+                setStageZero(!stageZero);
+              }}
             />
             <div className="flex flex-col md:mt-10 mt-0 md:w-60 w-24 h-32 md:justify-start justify-center md:items-center items-start ml-8 md:ml-0">
-              <p className={`text-white md:text-xl text-md font-regular`}>Stage 0</p>
-              { stageZero ? (<Fade bottom><ul className={`${stageZero ? 'text-white' : 'text-blue-700'} list-disc font-extralight md:mt-0 mt-5`}>
-                <li>Functional MVP</li>
-                <li>RRSS and Comunication Channels</li>
-                <li>RRSS Marketing</li>
-              </ul></Fade>): (null)}
+              <p className={`text-white md:text-xl text-md font-regular`}>
+                Stage 0
+              </p>
+              {stageZero ? (
+                <Fade bottom>
+                  <ul
+                    className={`${
+                      stageZero ? "text-white" : "text-blue-700"
+                    } list-disc font-extralight md:mt-0 mt-5`}
+                  >
+                    <li>Launch MVP</li>
+                    <li>Creation of RRSS and Comunication Channels</li>
+                    <li>Marketing</li>
+                  </ul>
+                </Fade>
+              ) : null}
             </div>
           </div>
           <div className="flex md:flex-col flex-row items-center">
             <div className="md:h-16 h-1 md:w-1 w-8 bg-white" />
-            <button 
-              type="button" 
-              className={`${stageTwo ? 'bg-yellow-300': null } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
-              onClick={()=> {setStageTwo(!stageTwo)}} 
+            <button
+              type="button"
+              className={`${
+                stageTwo ? "bg-yellow-300" : null
+              } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
+              onClick={() => {
+                setStageTwo(!stageTwo);
+              }}
             />
             <div className="flex flex-col md:mt-10 mt-0 md:w-60 w-24 h-32 md:justify-start justify-center md:items-center items-start ml-8 md:ml-0">
-              <p className={`${stageTwo ? 'md:mt-0 mt-14': null } text-white md:text-xl text-md font-regular`}>Stage 2</p>
-              { stageTwo ? (<Fade bottom><ul className="text-white list-disc font-extralight">
-                <li>4MyFuture Elite Club Landing</li>
-                <li>Futures Token creation & tokenomics</li>
-                <li>NFTs by range</li>
-              </ul></Fade>): (null)}
+              <p
+                className={`${
+                  stageTwo ? "md:mt-0 mt-14" : null
+                } text-white md:text-xl text-md font-regular`}
+              >
+                Stage 2
+              </p>
+              {stageTwo ? (
+                <Fade bottom>
+                  <ul className="text-white list-disc font-extralight">
+                    <li>4MyFuture Elite Club Landing</li>
+                    <li>Tokenomics Paper</li>
+                    <li>NFTs presentation</li>
+                  </ul>
+                </Fade>
+              ) : null}
             </div>
           </div>
           <div className="flex md:flex-col flex-row items-center">
             <div className="md:h-16 h-1 md:w-1 w-8 bg-white" />
-            <button 
-              type="button" 
-              className={`${stageFour ? 'bg-yellow-300': null } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
-              onClick={()=> {setStageFour(!stageFour)}} 
+            <button
+              type="button"
+              className={`${
+                stageFour ? "bg-yellow-300" : null
+              } w-10 h-10 rounded-full border-4 hover:bg-yellow-300 border-white`}
+              onClick={() => {
+                setStageFour(!stageFour);
+              }}
             />
             <div className="flex flex-col md:mt-10 mt-0 md:w-60 w-24 h-32 md:justify-start justify-center md:items-center items-start ml-8 md:ml-0">
-              <p className={`text-white md:text-xl text-md font-regular`}>Stage 4</p>
-              { stageFour ? (<Fade bottom><ul className="text-white list-disc font-extralight">
-                <li>4MyFuture Seed</li>
-              </ul></Fade>): (null)}
+              <p className={`text-white md:text-xl text-md font-regular`}>
+                Stage 4
+              </p>
+              {stageFour ? (
+                <Fade bottom>
+                  <ul className="text-white list-disc font-extralight">
+                    <li>4MyFuture Category Expantion</li>
+                  </ul>
+                </Fade>
+              ) : null}
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
