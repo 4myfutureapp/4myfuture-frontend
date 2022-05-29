@@ -1,0 +1,6 @@
+# Allow all user agents.
+User-agent: *
+Allow: /
+
+# TODO: Change the fake sitemap hostname for the official hostname
+Sitemap: https://4myfuture.app/api/sitemap

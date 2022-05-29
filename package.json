@@ -13,7 +13,8 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
     "@types/node": "17.0.31",
