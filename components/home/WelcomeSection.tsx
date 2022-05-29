@@ -17,10 +17,11 @@ export default function WelcomeSection() {
             <p className="text-blue-700 font-display-400 font-light md:text-6xl text-2xl md:w-[510px] w-[210px]">Reach Their Dreams</p>
           </div>
           <button 
-            className="font-display-200 md:h-14 h-8 md:w-60 w-32 md:ml-20 ml-10 bg-gradient-to-b from-blue-700 to-blue-100 md:rounded-xl rounded-md text-white md:text-xl text-md font-light md:mt-16 mt-5 hover:bg-white hover:text-blue-700 drop-shadow-3xl"
-            onClick={()=> router.push("/proposals")}
+            className="font-display-200 md:h-14 h-8 md:w-60 w-32 md:ml-20 ml-10 bg-gradient-to-b from-blue-700 to-blue-100 md:rounded-xl rounded-md text-white md:text-xl text-md font-light md:mt-16 mt-5 shadow-2xl drop-shadow-3xl"
+            //onClick={()=> router.push("/proposals")}
+            disabled={true}
           >
-            Start Now
+            Comming Soon
           </button>
         </div>
       </Fade>
