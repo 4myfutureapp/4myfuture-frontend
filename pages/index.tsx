@@ -14,7 +14,7 @@ export default function index() {
       <Seo
           metaTitle="4MyFuture DApp"
           metaDescription="Help Students Reach Their Dreams"
-          shareImage="/blue-logo.svg"
+          shareImage="/logo.png"
         />
       <WelcomeSection />
       <Information />
