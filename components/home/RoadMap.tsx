@@ -1,18 +1,30 @@
 import React from "react";
 import Fade from "react-reveal";
+import messages from './messages.json'
 
-export default function RoadMap() {
+export default function RoadMap({lang}) {
   const [stageZero, setStageZero] = React.useState(false);
   const [stageOne, setStageOne] = React.useState(false);
   const [stageTwo, setStageTwo] = React.useState(false);
   const [stageThree, setStageThree] = React.useState(false);
   const [stageFour, setStageFour] = React.useState(false);
+
+  const textReturn = (lang, value) =>{
+    var results = [];
+    if(lang == 'en'){
+    results.push(messages.en[0][value]);
+    }else {  
+    results.push(messages.es[0][value]);
+    }
+    return results    
+  }
+
   return (
     <div className="w-full h-screen bg-blue-700 flex relative">
       <Fade left cascade>
         <div className="flex flex-col absolute w-full h-full">
           <p className="text-white md:text-2xl text-md font-extralight md:ml-24 ml-16 md:mt-40 mt-20">
-            Our Goals
+          {textReturn(lang,'Our')}
           </p>
           <p className="text-white md:text-4xl text-xl font-regular md:ml-24 ml-16">
             RoadMap
@@ -31,10 +43,10 @@ export default function RoadMap() {
                   <ul
                     className={`text-white list-disc font-extralight md:text-base text-sm md:mt-0 mt-5 md:ml-7`}
                   >
-                    <li>Frontend & UI/UX new version</li>
-                    <li>First Community NFTs</li>
-                    <li>New Contract Version</li>
-                    <li>Whitelist for Airdrop</li>
+                    <li> {textReturn(lang,'Stage11')}</li>
+                    <li> {textReturn(lang,'Stage12')}</li>
+                    <li> {textReturn(lang,'Stage13')}</li>
+                    <li> {textReturn(lang,'Stage14')}</li>
                   </ul>
                 </Fade>
               ) : null}
@@ -62,9 +74,9 @@ export default function RoadMap() {
                       stageThree ? "text-white" : "text-blue-700"
                     } list-disc font-extralight md:mt-0 mt-5`}
                   >
-                    <li>Launch Token</li>
-                    <li>4MyFuture Elite Club and Minting page</li>
-                    <li>Honor page within The Club</li>
+                    <li> {textReturn(lang,'Stage31')}</li>
+                    <li> {textReturn(lang,'Stage32')}</li>
+                    <li> {textReturn(lang,'Stage33')}</li>
                   </ul>
                 </Fade>
               ) : null}
@@ -105,9 +117,9 @@ export default function RoadMap() {
                       stageZero ? "text-white" : "text-blue-700"
                     } list-disc font-extralight md:mt-0 mt-5`}
                   >
-                    <li>Launch MVP</li>
-                    <li>Creation of RRSS and Comunication Channels</li>
-                    <li>Marketing</li>
+                    <li> {textReturn(lang,'Stage01')}</li>
+                    <li> {textReturn(lang,'Stage02')}</li>
+                    <li> {textReturn(lang,'Stage03')}</li>
                   </ul>
                 </Fade>
               ) : null}
@@ -135,9 +147,9 @@ export default function RoadMap() {
               {stageTwo ? (
                 <Fade bottom>
                   <ul className="text-white list-disc font-extralight">
-                    <li>4MyFuture Elite Club Landing</li>
-                    <li>Tokenomics Paper</li>
-                    <li>NFTs presentation</li>
+                    <li> {textReturn(lang,'Stage21')}</li>
+                    <li> {textReturn(lang,'Stage22')}</li>
+                    <li> {textReturn(lang,'Stage23')}</li>
                   </ul>
                 </Fade>
               ) : null}
@@ -161,7 +173,7 @@ export default function RoadMap() {
               {stageFour ? (
                 <Fade bottom>
                   <ul className="text-white list-disc font-extralight">
-                    <li>4MyFuture Category Expantion</li>
+                  <li> {textReturn(lang,'Stage41')}</li>
                   </ul>
                 </Fade>
               ) : null}
