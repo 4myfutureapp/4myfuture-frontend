@@ -20,7 +20,7 @@ export default function WelcomeSection({lang}) {
   }
 
   return (
-    <div className="w-full md:h-[620px] h-[250px] flex flex-row item-center relative">
+    <div className="w-full md:h-[620px] h-[250px] flex flex-row item-center mb-14">
       <Fade left>
         <div className="flex flex-col justify-center z-10 md:-mt-0 -mt-10">
           <div className="flex flex-row items-center md:ml-20 ml-10">
@@ -40,7 +40,7 @@ export default function WelcomeSection({lang}) {
         </div>
       </Fade>
       <Fade right>
-        <div className="flex w-full md:h-[650px] h-[220px] items-center justify-end absolute md:ml-0 ml-10">
+        <div className="flex w-full md:h-[650px] h-[220px] items-center justify-end absolute md:ml-0 ml-10 mt-4">
           <img alt="rocket" src="rocket.svg" className="flex md:w-3/6 w-[270px]" />
         </div>
       </Fade>
@@ -51,5 +51,6 @@ export default function WelcomeSection({lang}) {
       </div> */}
      
     </div>
+   
   )
 }
