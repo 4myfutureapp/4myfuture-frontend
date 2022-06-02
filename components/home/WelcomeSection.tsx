@@ -3,7 +3,6 @@ import React from 'react';
 import Fade from 'react-reveal';
 import { useRouter } from 'next/router';
 import messages from './messages.json'
-import {textReturns} from './valueHooks'
 
 
 export default function WelcomeSection({changeLang}) {
