@@ -8,7 +8,9 @@ import messages from './messages.json'
 export default function WelcomeSection({changeLang}) {
   const router = useRouter();
   const [language, setLanguage] = React.useState('');
-  // const id = router.query.id;
+  let es = 'light';
+  let en = 'bold';
+  
   changeLang(language)
 
  
@@ -16,11 +18,11 @@ export default function WelcomeSection({changeLang}) {
    
     var results = [];
     if(lang == 'en'){
-     
     results.push(messages.en[0][value]);
     }else {  
-     
-    results.push(messages.es[0][value]);
+      en = 'light';
+      es = 'bold';
+     results.push(messages.es[0][value]);
     }
     return results    
   }
@@ -52,9 +54,9 @@ export default function WelcomeSection({changeLang}) {
         </div>
       </Fade>
       <div className="w-full h-full flex justify-end items-end flex-row gap-x-2 md:p-7 p-4 z-40">
-        <button className="md:text-xl text-sm font-bold text-blue-700 hover:text-blue-300"  onClick={() => setLanguage('en')}>EN</button>
+        <button className={`md:text-xl text-sm font-${en} text-blue-700 hover:text-blue-300`}  onClick={() => setLanguage('en')}>EN</button>
         <p className="md:text-xl text-sm text-blue-700">/</p>
-        <button className="md:text-xl text-sm font-light text-blue-700 hover:text-blue-300" onClick={() => setLanguage('es')}>ES</button>
+        <button className={`md:text-xl text-sm font-${es} text-blue-700 hover:text-blue-300`} onClick={() => setLanguage('es')}>ES</button>
       </div>
      
     </div>
