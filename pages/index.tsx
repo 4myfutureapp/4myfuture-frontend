@@ -9,10 +9,9 @@ import FrequentQuestionSection from '../components/home/FrequentQuestionSection'
 import { Seo } from '../components/Seo/Seo';
 
 
-export default function index() {
+export default function Index() {
   const [language, setLanguage] = React.useState('en');
-  const [es, setEs]=React.useState('light');
-  const [en, setEn]=React.useState('bold');
+  
   
   const changeLang = (lang) =>{
     Lang(lang)
@@ -22,12 +21,8 @@ export default function index() {
   const Lang = (lang) =>{
   if(lang=='en'){
     setLanguage('en');
-    setEs('light');
-    setEn('bold');
   }else{
     setLanguage('es');
-    setEn('light');
-    setEs('bold');
   }
     
   }
