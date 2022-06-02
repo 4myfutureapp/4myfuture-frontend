@@ -14,6 +14,11 @@ export default function index() {
   const [es, setEs]=React.useState('light');
   const [en, setEn]=React.useState('bold');
   
+  const changeLang = (lang) =>{
+    Lang(lang)
+      
+    }
+
   const Lang = (lang) =>{
   if(lang=='en'){
     setLanguage('en');
@@ -28,22 +33,22 @@ export default function index() {
   }
 
   return (
-     <div className=" ">     
+     <div className="">     
         
       <Layout>
-        <br></br>
+        {/* <br></br>
       <div className="w-full h-full flex justify-end items-end mt-2 mb-2">
         <button className={`md:text-xl text-sm font-${en} text-blue-700 hover:text-blue-300`}  onClick={() => Lang('en') } >EN</button>
         <p className="md:text-xl text-sm text-blue-700">/</p>
         <button className={`md:text-xl text-sm font-${es} text-blue-700 hover:text-blue-300 mr-4`} onClick={() => Lang('es')}>ES</button>
-      </div>
+      </div> */}
       <Seo
           metaTitle="4MyFuture DApp"
           metaDescription="Help Students Reach Their Dreams"
           shareImage="/blue-logo.svg"
         />
      
-      <WelcomeSection lang = {language}/>
+      <WelcomeSection changeLang = {changeLang}/>
       
      
       <Information lang = {language} />
