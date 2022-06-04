@@ -21,7 +21,7 @@ export default function ContributorSection({lang}) {
         </div>
       </Fade>
       <Fade right>
-        <div className="flex flex-col bg-white md:h-[500px] h-96  md:w-[500px] w-80 overflow-y-clip drop-shadow-3xl rounded-xl">
+        <div className="flex flex-col bg-white md:h-[500px] h-96  md:w-[500px] w-80 overflow-clip drop-shadow-3xl rounded-xl">
           <div className="md:h-[100px] h-16 w-full bg-blue-400 flex items-center justify-center">
             <p className="text-white md:text-4xl text-xl font-extralight">{textReturn(lang,'Top')}</p>
           </div>
