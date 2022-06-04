@@ -8,20 +8,44 @@ import TeamSection from '../components/home/TeamSection';
 import FrequentQuestionSection from '../components/home/FrequentQuestionSection';
 import { Seo } from '../components/Seo/Seo';
 
-export default function index() {
+
+export default function Index() {
+  const [language, setLanguage] = React.useState('en');
+  
+  
+  const changeLang = (lang) =>{
+    Lang(lang)
+      
+    }
+
+  const Lang = (lang) =>{
+  if(lang=='en'){
+    setLanguage('en');
+  }else{
+    setLanguage('es');
+  }
+    
+  }
+
   return (
-    <Layout>
+     <div className="">     
+        
+      <Layout>
       <Seo
           metaTitle="4MyFuture DApp"
           metaDescription="Help Students Reach Their Dreams"
           shareImage="/logo.png"
         />
-      <WelcomeSection />
-      <Information />
-      <RoadMap />
-      <ContributorSection />
-      <TeamSection />
-      <FrequentQuestionSection />
+     
+      <WelcomeSection changeLang = {changeLang}/>
+      
+     
+      <Information lang = {language} />
+      <RoadMap lang = {language}/>
+      <ContributorSection lang = {language}/>
+      <TeamSection lang = {language} />
+      <FrequentQuestionSection lang = {language} />
     </Layout>
+    </div>
   );
 }

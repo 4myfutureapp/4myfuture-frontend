@@ -1,8 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Fade from 'react-reveal';
+import messages from './messages.json'
 
-export default function ContributorSection() {
+export default function ContributorSection({lang}) {
+  const textReturn = (lang, value) =>{
+    var results = [];
+    if(lang == 'en'){
+    results.push(messages.en[0][value]);
+    }else {  
+    results.push(messages.es[0][value]);
+    }
+    return results    
+  }
   return (
     <div className="w-full md:h-screen h-[500px] flex flex-row items-center justify-evenly">
       <Fade left>
@@ -13,7 +23,7 @@ export default function ContributorSection() {
       <Fade right>
         <div className="flex flex-col bg-white md:h-[500px] h-96  md:w-[500px] w-80 overflow-clip drop-shadow-3xl rounded-xl">
           <div className="md:h-[100px] h-16 w-full bg-blue-400 flex items-center justify-center">
-            <p className="text-white md:text-4xl text-xl font-extralight">Top Contributions</p>
+            <p className="text-white md:text-4xl text-xl font-extralight">{textReturn(lang,'Top')}</p>
           </div>
           <div className="flex flex-row md:mt-8 mt-5 items-center">
             <div className="md:w-16 w-10 md:h-16 h-10 rounded-full bg-yellow-300 md:ml-16 ml-12 flex items-center justify-center">
@@ -25,7 +35,7 @@ export default function ContributorSection() {
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500">Comming Soon </p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500"> {textReturn(lang,'Comming')} </p>
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
@@ -44,7 +54,7 @@ export default function ContributorSection() {
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500"> Comming Soon  </p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500">  {textReturn(lang,'Comming')}  </p>
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
@@ -63,7 +73,7 @@ export default function ContributorSection() {
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
-                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500">Comming Soon </p>
+                <p className="text-gray-600 font-extralight md:text-xl text-md p-6 font-bold text-gray-500"> {textReturn(lang,'Comming')} </p>
                 <p className="text-gray-600 font-regular md:text-xl text-md ml-2"></p>
               </div>
               <div className="flex flex-row items-center">
