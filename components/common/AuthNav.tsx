@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 interface AuthNavProps {
   user: string;
@@ -8,6 +9,7 @@ interface AuthNavProps {
 }
 
 function AuthNav({user, nears}: AuthNavProps) {
+  const router = useRouter();
   return (
     <div className="bg-white bg-opacity-25 flex flex-row md:h-24 h-20 w-full items-center">
       <img src="blue-logo.svg" className="md:ml-16 ml-5 md:w-48 w-36" alt="logo" />
@@ -25,7 +27,10 @@ function AuthNav({user, nears}: AuthNavProps) {
           <div className="w-1/2 h-full flex items-center justify-center text-blue-300 font-semibold">
             <p>NEAR {nears}</p>
           </div>
-          <button className="w-1/2 h-full bg-blue-300 rounded-xl text-white">{user}</button>
+          <button 
+            className="w-1/2 h-full bg-blue-300 rounded-xl text-white"
+            onClick={()=>router.push("/user")}
+            >{user}</button>
         </div>  
       </div>
     </div>

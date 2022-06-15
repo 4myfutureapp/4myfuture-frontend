@@ -11,11 +11,11 @@ function ContributionPage() {
       <ContributionData contributions={5} donated={7.3} students={4} />
       <ContributionsCarousel list={ContributionsList} title="Your Contributions" filter />
       <div className="w-full flex flex-row">
-        <div className="w-1/2 flex flex-col">
+        <div className="md:w-1/2 w-full flex flex-col">
           <ContributionsCarousel list={ContributionsList} title="Top Contributions" filter={false} />
           <ContributionsCarousel list={ContributionsList} title="Top Contributions" filter={false} />
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="hidden w-1/2 lg:flex justify-center">
           <GenerousContributionCard name={'Proposal Name'} date={'01/02/2022'} nears={0.5} />
         </div>
       </div>

@@ -9,11 +9,11 @@ const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mo
 function ProposalPage() {
   return (
     <Layout>
-      <div className="flex flex-row w-full h-[600px]">
-        <div className="w-2/5">
+      <div className="flex md:flex-row flex-col w-full md:h-[600px]">
+        <div className="md:w-2/5">
           <ImageSelector list={ImageSelectorList} />
         </div>
-        <div className="w-3/5">
+        <div className="md:w-3/5">
           <ProposalData name={'Proposal Name'} user={'John Smith'} goal={30} nears={7} institution={'https://instagram.com'} pensum={'https://intagram.com'} text={text} startDate={'01/02/2022'} endDate={'01/02/2023'} />
         </div>
       </div>

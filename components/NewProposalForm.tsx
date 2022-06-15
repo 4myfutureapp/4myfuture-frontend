@@ -12,18 +12,18 @@ function NewProposalForm() {
     <div className="w-full h-full">
       { firstPart ? (
       <><div className="absolute w-full h-full flex items-end justify-end">
-          <img src="astronaut.svg" alt="bg" className="h-[350px] -mr-60 opacity-70 absolute" />
+          <img src="astronaut.svg" alt="bg" className="lg:block hidden h-[350px] -mr-60 opacity-70 absolute" />
         </div><div className="relative w-full h-full flex justify-center items-center">
-            <div className=" w-8/12 h-5/6 bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
+            <div className="md:w-8/12 w-10/12 md:h-5/6 h-[550px] bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
               <div className="flex flex-row">
-                <div className="w-1/2 flex justify-start">
-                  <p className="text-blue-700 text-3xl font-semibold">Create Proposal</p>
+                <div className="md:w-1/2 w-2/3 flex justify-start">
+                  <p className="text-blue-700 md:text-3xl text-xl font-semibold">Create Proposal</p>
                 </div>
                 <div className="w-1/2 flex justify-end">
                   <p className="text-yellow-300 text-lg font-light">1/3</p>
                 </div>
               </div>
-              <p className="text-gray-200 font-extralight">Enter the corresponding data to create your proposal. Use real data to provide credibility to your proposal.</p>
+              <p className="text-gray-200 font-extralight md:text-base text-xs">Enter the corresponding data to create your proposal. Use real data to provide credibility to your proposal.</p>
               <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2">
                 <span>Proposal Name</span>
                 <input
@@ -31,8 +31,8 @@ function NewProposalForm() {
                   type="text"
                   required />
               </label>
-              <div className="flex flex-row w-full gap-x-10">
-                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-1/2">
+              <div className="flex md:flex-row flex-col w-full gap-x-10">
+                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 md:w-1/2 w-full">
                   <span>Academic Goal</span>
                   <select
                     className="w-full md:h-12 h-10  bg-gray-300 rounded-lg outline-none pr-2"
@@ -43,7 +43,7 @@ function NewProposalForm() {
                     <option value={"hey"} />
                   </select>
                 </label>
-                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-1/2">
+                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 md:w-1/2 w-full">
                   <span>Link to Institute`s Website</span>
                   <input
                     className="w-full md:h-12 h-10  bg-gray-300 rounded-lg outline-none pl-2"
@@ -51,7 +51,7 @@ function NewProposalForm() {
                     required />
                 </label>
               </div>
-              <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-1/2">
+              <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 md:w-1/2 w-full">
                 <span>Link to PENSUM</span>
                 <input
                   className="w-full md:h-12 h-10  bg-gray-300 rounded-lg outline-none pl-2"
@@ -62,19 +62,19 @@ function NewProposalForm() {
             </div>
           </div></>) : (secondPart ? (<>
           <div className="absolute w-full h-full flex items-end justify-end">
-          <img src="rocket.svg" alt="bg" className="h-[500px] -mr-32 opacity-70 absolute" />
+          <img src="rocket.svg" alt="bg" className="hidden lg:block h-[500px] -mr-32 opacity-70 absolute" />
         </div><div className="relative w-full h-full flex justify-center items-center">
-            <div className=" w-8/12 h-5/6 bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
+            <div className="md:w-8/12 w-10/12 md:h-5/6 h-[550px] bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
               <div className="flex flex-row">
-                <div className="w-1/2 flex justify-start">
-                  <p className="text-blue-700 text-3xl font-semibold">Time & Description</p>
+                <div className="md:w-1/2 w-full flex justify-start">
+                  <p className="text-blue-700 md:text-3xl text-xl font-semibold">Time & Description</p>
                 </div>
                 <div className="w-1/2 flex justify-end">
                   <p className="text-yellow-300 text-lg font-light">2/3</p>
                 </div>
               </div>
-              <div className="flex flex-row gap-x-5 w-full">
-                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-3/5">
+              <div className="flex md:flex-row flex-col gap-x-5 w-full">
+                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 md:w-3/5 w-full">
                   <span>Time of Academic Activity</span>
                   <div className="flex flex-row w-full gap-x-5">
                     <input
@@ -87,7 +87,7 @@ function NewProposalForm() {
                       required />
                   </div>
                 </label>
-                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-1/3">
+                <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 md:w-1/3 w-full">
                   <span>Proposal Duration</span>
                   <select
                     className="w-full md:h-12 h-10  bg-gray-300 rounded-lg outline-none pr-2"
@@ -102,29 +102,29 @@ function NewProposalForm() {
                 <label className="flex flex-col items-start mt-5 md:text-base text-xs text-start text-blue-800 gap-y-2 w-full">
                   <span>Explain Why You Need the Funds</span>
                   <textarea
-                    className="w-full md:h-40 h-10  bg-gray-300 rounded-lg outline-none p-3"
+                    className="w-full md:h-40 h-40  bg-gray-300 rounded-lg outline-none p-3"
                     required />
                 </label>
               <button type="button" className="w-full h-14 mt-8 bg-blue-300 text-white rounded-xl drop-shadow-3xl hover:bg-blue-700" onClick={(e)=> {e.preventDefault(); setSecondPart(false); setFirstPart(false); setThirdPart(true);}}>Next</button>
             </div>
           </div>
           </>):(thirdPart ? (<><div className="absolute w-full h-full flex items-end justify-end">
-            <img src="telescope.svg" alt="bg" className="h-60 mr-5 opacity-70 absolute" />
+            <img src="telescope.svg" alt="bg" className="hidden lg:block h-60 mr-5 opacity-70 absolute" />
           </div><div className="relative w-full h-full flex justify-center items-center">
-              <div className=" w-8/12 h-5/6 bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
+              <div className="md:w-8/12 w-10/12 md:h-5/6 h-[550px] bg-white drop-shadow-3xl rounded-xl flex flex-col p-5">
                 <div className="h-4/5">
                 <div className="flex flex-row">
                   <div className="w-1/2 flex justify-start">
-                    <p className="text-blue-700 text-3xl font-semibold">Add Photos</p>
+                    <p className="text-blue-700 md:text-3xl text-xl font-semibold">Add Photos</p>
                   </div>
                   <div className="w-1/2 flex justify-end">
                     <p className="text-yellow-300 text-lg font-light">3/3</p>
                   </div>
                 </div>
-                <p className="text-gray-200 font-extralight pb-8">Add photos to create your proposal. Use real photos to provide credibility to your proposal.</p>
+                <p className="text-gray-200 font-extralight pb-8 md:text-base text-xs">Add photos to create your proposal. Use real photos to provide credibility to your proposal.</p>
                 <input type="file" id="upload" hidden />
-                <label htmlFor="upload" className="w-32 h-32 bg-white drop-shadow-3xl rounded-xl flex justify-center items-center cursor-pointer text-blue-700 hover:text-blue-300"> 
-                  <PlusIcon className="w-16" />
+                <label htmlFor="upload" className="md:w-32 w-24 md:h-32 h-24 bg-white drop-shadow-3xl rounded-xl flex justify-center items-center cursor-pointer text-blue-700 hover:text-blue-300"> 
+                  <PlusIcon className="md:w-16 w-12" />
                 </label>
                 </div>
                 <div className="flex items-end">
