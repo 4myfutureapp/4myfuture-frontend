@@ -10,20 +10,20 @@ interface ContributionDataProps {
 function ContributionData({contributions, donated, students}: ContributionDataProps) {
   return (
     <Fade top>
-    <div className="w-full flex flex-row justify-evenly mt-16">
-      <div className="bg-blue-300 w-72 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
-        <p className="text-white text-6xl font-light">{contributions}</p>
-        <p className="text-white text-xl font-extralight">contributions made</p>
+      <div className="w-full flex flex-row justify-evenly md:mt-16 mt-8">
+        <div className="bg-blue-300 md:w-72 w-28 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
+          <p className="text-white md:text-6xl text-2xl font-light">{contributions}</p>
+          <p className="text-white md:text-xl text-sm text-center font-extralight">contributions made</p>
+        </div>
+        <div className="bg-blue-700 md:w-72 w-28 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
+          <p className="text-white md:text-6xl text-2xl font-light">{donated}</p>
+          <p className="text-white md:text-xl text-sm text-center md:w-full w-24 font-extralight">NEARs donated</p>
+        </div>
+        <div className="bg-blue-300 md:w-72 w-28 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
+          <p className="text-white md:text-6xl text-2xl font-light">{students}</p>
+          <p className="text-white md:text-xl text-sm text-center md:w-full w-24 font-extralight">students helped</p>
+        </div>
       </div>
-      <div className="bg-blue-700 w-72 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
-        <p className="text-white text-6xl font-light">{donated}</p>
-        <p className="text-white text-xl font-extralight">NEARs donated</p>
-      </div>
-      <div className="bg-blue-300 w-72 h-28 rounded-full flex flex-col justify-center items-center gap-y-2">
-        <p className="text-white text-6xl font-light">{students}</p>
-        <p className="text-white text-xl font-extralight">students helped</p>
-      </div>
-    </div>
     </Fade>
   );
 }
