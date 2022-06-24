@@ -32,9 +32,12 @@
       "Team": "Our Team",
       "Cofounder": "Co-founder",
       "Frontend": "Frontend Developer",
+      "Marketing": "Marketing Team",
       "DescriptionBladimir": "Co-founder 4MyFuture, Mobile developer and Blockchain developer, Systems Engineering Student. Open Source and cripto enthusiast",
       "DescriptionEdward": "Co-founder 4MyFuture, Full Stack and Blockchain developer, Systems Engineering Student . Open Source enthusiast. Visionary. Investor",
       "DescriptionAna":"Systems Engineering Student. Frontend Developer. UI/UX Designer",
+      "DescriptionJulio":"TSU in advertising and marketing, community manager, creative creator, dreamer",
+      "DescriptionFernando":"Chemical Engineering student, community manager, creative, committed and disciplined. ",
       "FAQ": "Frequently Asked Questions",
       "Q1": "What is 4MyFuture?",
       "Q2": "How do I Sign Up?",
@@ -53,7 +56,11 @@
       "A7": "R. It's really easy! connect your Wallet, choose a proposal that catches your attention and press “contribute” with the amount of NEARs you want to collaborate",
       "A5": "R. You will receive your funds in your NEAR Wallet as people contribute, then you will have the option to exchange your tokens for your local currency using exchanges such as Binance and NEARp2p",
       "A9": "R. No, due to platform security the amount of proposals per Wallet is limited to one, which allows the possibility to focus all the resources to this proposal",
-      "A8": "R. The creators of the project will get in touch with you once you decide to create a proposal for a follow up on the progress"
+      "A8": "R. The creators of the project will get in touch with you once you decide to create a proposal for a follow up on the progress",
+      "Info": "Information:",
+      "Contact": "Contact:",
+      "Follow": "Follow Us:",
+      "Ternms": "Terms & Conditions"
     }]
   ,
   "es": 
@@ -88,9 +95,12 @@
       "Team": "Nuestro equipo",
       "Cofounder": "Cofundador",
       "Frontend": "Desarrollador Frontend",
+      "Marketing": "Equipo de marketing",
       "DescriptionBladimir": "Cofundador de 4MyFuture, desarrollador de móviles y de Blockchain, estudiante de Ingeniería de Sistemas. Entusiasta del Open source y del las criptos",
       "DescriptionEdward": "Cofundador de 4MyFuture, desarrollador Full Stack y Blockchain, estudiante de Ingeniería de Sistemas. Entusiasta del Open source. Visionario. Inversor",
       "DescriptionAna":"Estudiante de Ingeniería de Sistemas. Desarrollador Frontend. Diseñador UI/UX",
+      "DescriptionJulio":"TSU en publicidad y mercadeo, community manager, creador creativo, soñador ",
+      "DescriptionFernando":"Estudiante de Ingeniería Química, community manager, creativo, comprometido y disciplinado ",
       "FAQ": "Preguntas frecuentes",
       "Q1": "¿Qué es 4MyFuture?",
       "Q2": "¿Cómo me registro?",
@@ -109,7 +119,11 @@
       "A7": "R. Es muy fácil! Conecta tu Cartera, elige una propuesta que te llame la atención y pulsa “contribuir” con la cantidad de NEARs que quieras colaborar",
       "A5": "R. Recibirás tus fondos en tu Cartera NEAR a medida que la gente contribuya, luego tendrás la opción de cambiar tus tokens por tu moneda local usando exchanges como Binance y NEARp2p",
       "A9": "R. No, debido a la seguridad de la plataforma la cantidad de propuestas por Cartera está limitada a una, lo que permite la posibilidad de enfocar todos los recursos a esta propuesta",
-      "A8": "R. Los creadores del proyecto se pondrán en contacto contigo una vez que decidas crear una propuesta para el seguimiento de los avances"
+      "A8": "R. Los creadores del proyecto se pondrán en contacto contigo una vez que decidas crear una propuesta para el seguimiento de los avances",
+      "Info": "Información:",
+      "Contact": "Contacto:",
+      "Follow": "Síguenos:",
+      "Ternms": "Términos y condiciones"
     }]
   
 }

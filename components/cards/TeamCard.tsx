@@ -18,7 +18,7 @@ interface TeamCardProps {
 export default function TeamCard({name, job, description, img, linkedin, git, twitter}: TeamCardProps) {
   const [hover, setHover] = React.useState(true);
   return (
-    <div onMouseOver={()=>{setHover(false)}} onMouseOut={()=>{setHover(true)}} className="md:w-80 w-40 md:h-96 h-52 drop-shadow-3xl flex flex-col items-center bg-white rounded-xl overflow-y-clip">
+    <div onMouseOver={()=>{setHover(false)}} onMouseOut={()=>{setHover(true)}} className="md:w-80 w-40 md:h-96 h-52 drop-shadow-3xl flex flex-col items-center bg-white rounded-xl overflow-y-clip m-3">
       {hover ? (
       <div className="md:w-80 w-40 md:h-96 h-52 flex flex-col items-center">
         <div className="w-full md:h-80 h-40 flex items-center justify-center overflow-clip">

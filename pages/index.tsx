@@ -7,6 +7,7 @@ import ContributorSection from '../components/home/ContributorSection';
 import TeamSection from '../components/home/TeamSection';
 import FrequentQuestionSection from '../components/home/FrequentQuestionSection';
 import { Seo } from '../components/Seo/Seo';
+import Footer from '../components/common/Footer';
 
 
 export default function Index() {
@@ -45,6 +46,7 @@ export default function Index() {
       <ContributorSection lang = {language}/>
       <TeamSection lang = {language} />
       <FrequentQuestionSection lang = {language} />
+      <Footer lang = {language}/>
     </Layout>
     </div>
   );

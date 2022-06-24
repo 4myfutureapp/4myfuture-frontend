@@ -50,9 +50,9 @@ function Layout({ children }: LayoutProps) {
       </div>
       <div className="w-full relative z-10 flex flex-col overflow-x-hidden">{children}</div>
       {/* Mobile navs goes on the footer of the page, so no footer will be shown on this screen size. */}
-      <div className="w-full">
-        <Footer />
-      </div>
+     
+        
+      
     </div>
   );
 }
